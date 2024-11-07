@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Dependencias instaladas por Yarn
+.yarn/
+
+# Logs de instalación
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de configuración de entorno
+.env
