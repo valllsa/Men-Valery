@@ -1,7 +1,6 @@
 var colors = require('colors');
 const inquirer = require('inquirer');
 
-
 const questions =[
     {
     type: 'list',
@@ -73,7 +72,7 @@ const leerInput = async (message) => {
             }
         }
     ];
-    const { desc } = await  inquirer.default.prompt(question);
+    const { desc } = await inquirer.default.prompt(question);
     return desc;
 }
 
@@ -125,10 +124,9 @@ const listarTareasCompletar = async (tareas = []) => {
         }
     ];
 
-    const { ids } = await inquirer.prompt(pregunta);
+    const { ids } = await inquirer.default.prompt(pregunta);
     return ids;
 }
-
 
 module.exports = {
     menu,
@@ -137,5 +135,3 @@ module.exports = {
     listarTareasBorrar,
     listarTareasCompletar
 };
-
-// listartareas
